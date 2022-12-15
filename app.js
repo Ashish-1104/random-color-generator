@@ -70,7 +70,7 @@ function copyCode() {
     navigator.clipboard.writeText(code);
     copy.innerHTML = "Copied ";
     setTimeout(function () {
-        copy.innerHTML = "Copy Code";
+        copy.innerHTML = "Copy Color Code";
     }, 2000);
 
 
