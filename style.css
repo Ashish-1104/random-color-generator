@@ -19,7 +19,7 @@ body{
 }
 .container{
     height:auto;
-    width:500px;
+    width:550px;
     padding:18px;
     background-color: rgba(255,255,255,0.2);
     box-shadow:5px 5px 5px rgba(255,255,255,0.1);
@@ -41,7 +41,7 @@ h2{
     text-shadow: -2px 4px 2px rgb(37, 35, 35),2px 4px 2px rgb(51, 48, 48);
 }
 .btn, .copy{
-    width:90%;
+    width:100%;
     height: auto;
     padding: 10px;
     margin-top:15px;
@@ -55,4 +55,59 @@ h2{
 }
 .btn:active, .copy:active{
     background-color:black ;
+}
+.range{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:20px
+}
+.red_row,.green_row,.blue_row{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 16px 0 16px 0;
+    background-color: rgba(255,255,255,0.5);
+    border:2px black solid;
+    width:60%;
+    height:15px;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height:25px;
+    width:25px;
+    border:2px solid black;
+    border-radius:50%;
+    z-index: 1;
+    cursor:pointer;
+}
+label.red{
+    color:red;
+}
+label.green{
+    color:green;
+}
+label.blue{
+    color:blue;
+}
+#red::-webkit-slider-thumb{
+    background-color: red;
+}
+#blue::-webkit-slider-thumb{
+    background-color: blue;
+}
+#green::-webkit-slider-thumb{
+    background-color: green;
+}
+
+label{
+    font-style: italic;
+    font-family: 'Amatic SC',cursive,'Satisfy',cursive;
 }

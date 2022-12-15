@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Color Generator</title>
-    <link rel="icon" href="icon.png"></link>
+    <link rel="icon" href="icon.png">
+    </link>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
 </head>
+
 <body>
     <div class="main">
         <div class="container">
             <h2 class="code">#colorcode</h2>
-            <button class="btn">Change Color</button>
+            <div class="range">
+                <div class="red_row">
+                    <input type="range" min="0" max="255" value="128" class="slider" id="red">
+                    <label for="red" class="red">Red:</label>
+                </div>
+                <div class="green_row">
+                    <input type="range" min="0" max="255" value="128" class="slider" id="green">
+                    <label for="green" class="green">Green:</label>
+                </div><div class="blue_row">
+                    <input type="range" min="0" max="255" value="128" class="slider" id="blue">
+                    <label for="blue" class="blue">Blue:</label>
+                </div>
+            </div>
             <button class="copy">Copy Code</button>
+            <button class="btn">Generate Random Color</button>
 
         </div>
     </div>
     <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/0bd1acabc1.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
