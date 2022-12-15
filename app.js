@@ -6,6 +6,7 @@ var copy=document.querySelector(".copy");
 var red_slider=document.querySelector("#red");
 var green_slider=document.querySelector("#green");
 var blue_slider=document.querySelector("#blue");
+var col_code=document.querySelector(".code");
 
 copy.addEventListener("click",copyCode);
 btn.addEventListener("click",genColor);
@@ -25,7 +26,7 @@ blue_slider.addEventListener("input",function(){
     setOutput(red,green,blue);
 });
 
-
+col_code.addEventListener("click",copyCode);
 
 function setOutput(red,green,blue){
     // console.log(red,green,blue);
